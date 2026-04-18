@@ -32,8 +32,11 @@ then i handled edge cases
 after that i added the backend for persistent storage
 * i used django for the backend and sqlite for the database. initially i thought of using localStorage for persistence, but later switched to a backend approach so that data is stored more reliably and can scale better.  each activity that gets logged in gets stored in a database using a model with fields like name, category and date
 * there are two api endpoints that i used
+
  GET /api/activities/ → fetch all activities
+ 
  POST /api/activities/ → add a new activity
+ 
 * i used fetch API in the frontend to send GET requests when the app loads to retrieve existing activities and POST requests when a new activity is added so that the data is stored in the backend and persists across sessions
 
 **What I’d Change/ Add**
